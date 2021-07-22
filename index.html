@@ -1,0 +1,106 @@
+<p id="q1"></p>
+<p id="q2in1"></p>
+<button onclick="myFunction()">Qustion3</button>
+<p id="q4"></p>
+<p id="q5"></p>
+<p id="q6"></p>
+<p id="q13"></p>
+<p id="q14"></p>
+<p id="q15"></p>
+<p id="q16"></p>
+
+<script>
+function aaa(x) {
+  return (x) * (x);
+}
+document.getElementById("q1").innerHTML = aaa(6);
+</script>
+<script>
+var num1 = 5;
+var num2 = 6;
+function bba() {
+  return (num1) + (num2);
+}
+function bbb() {
+  return (num1) * (num2);
+}
+function bbc() {
+  return (num1) - (num2);
+}
+function bbd() {
+  return (num1) / (num2);
+}
+document.getElementById("q2in1").innerHTML = 'The addition of the tow number is ' + bba() + '<br>' +'The multiplication of the tow number is ' + bbb() + '<br>'
++'The multiplication of the tow number is ' + bbc() + '<br>'
++'The division of the tow number is ' + bbd();
+</script>
+
+
+<script>
+function myFunction() {
+  alert("Hello World");
+}
+</script>
+<script>
+function ddd(length, width, hight) {
+  return (length) * (width) * (hight);
+}
+document.getElementById("q4").innerHTML = ddd(6, 7, 10);
+</script>
+
+<script>
+// Create an object:
+const person = {firstName:"Nimal", lastName:"Raj", age:15, city:"Kandy"};
+
+// Display some data from the object:
+document.getElementById("q5").innerHTML =
+ "My name is " + person.firstName +' '+  person.lastName +' ' + "I'm"+' '+person.age + ' '+ " years old." +' ' +" I live in " + person.city + '.' ;
+
+</script>
+
+
+<script>
+document.getElementById("q6").innerHTML = ("course Name:-Bit" + " <br>" + "Fee: Rs 150000"+ " <br>" + "Start Date: 12.06.2018" + " <br>" + "Center: Our Office");
+</script>
+
+<script>
+const cars = [];
+const cars = new Array();
+</script>
+
+<script>
+function lll() {
+const cars = [ 6, 7, 8, 9, 10, 11 ];
+var x = 0;
+var y = 0;
+while ( x < cars.length) {
+	while (cars[x] < y )
+	{y = cars[x];}
+
+	x++;
+	} return y ;  }
+document.getElementById("q13").innerHTML =  lll();
+</script>
+<script>
+const fruits = [ "Apple", "Orange", "Mango","Grape","Banana"];
+document.getElementById("q14").innerHTML = fruits.length + '<br>'+ fruits[3] + '<br>'+ fruits.reverse();
+
+</script>
+
+
+<script>
+const foods = [ "rice", "pizza", "sandwich","rolls"];
+ foods.pop();
+ foods.push("cake");
+ foods.shift();
+ document.getElementById("q15").innerHTML = foods;
+</script>
+
+<script>
+  const abc = ['','',"Apple"];
+  abc[0] = 'Lemon';
+  abc[1] = 'Pineapple';
+   abc.push("orange","Peach");
+
+   document.getElementById("q16").innerHTML = abc;
+</script>
